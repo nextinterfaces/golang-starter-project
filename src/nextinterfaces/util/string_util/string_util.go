@@ -1,6 +1,8 @@
 // Package string_util contains utility functions for working with strings.
 package string_util
 
+import "fmt"
+
 // Reverse returns its argument string reversed rune-wise left to right.
 func Reverse(s string) string {
 	r := []rune(s)
@@ -12,5 +14,6 @@ func Reverse(s string) string {
 
 // Returns string len
 func Length(s string) int {
+	fmt.Printf("Inside Length() \n")
 	return len(s)
 }

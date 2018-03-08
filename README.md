@@ -21,6 +21,8 @@ Create dependencies to `pkg`
     $ cd $GOPATH/src
     $ go build nextinterfaces_util/string_util
     $ go install nextinterfaces_util/string_util
+    $ go build nextinterfaces_playground/hello
+    $ go install nextinterfaces_playground/hello
     
 Create executables to `bin` 
     
