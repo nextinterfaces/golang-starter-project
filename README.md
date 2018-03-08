@@ -65,3 +65,13 @@ Alternatively
     $ go install nextinterfaces_playground/web/webserver_content
     $ webserver_content
     
+#### Go Get - Install Third-Party Packages ####
+
+    $ go get gopkg.in/mgo.v2
+    
+And import as
+
+    import (        
+            "gopkg.in/mgo.v2" 
+            "gopkg.in/mgo.v2/bson"       
+    )
