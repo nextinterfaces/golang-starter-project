@@ -68,10 +68,12 @@ Alternatively
 #### Go Get - Install Third-Party Packages ####
 
     $ go get gopkg.in/mgo.v2
+    $ go get github.com/nextinterfaces/golang-helloworld/helloworld
     
 And import as
 
     import (        
             "gopkg.in/mgo.v2" 
-            "gopkg.in/mgo.v2/bson"       
+            "gopkg.in/mgo.v2/bson"    
+	        "github.com/nextinterfaces/golang-helloworld/helloworld"   
     )
