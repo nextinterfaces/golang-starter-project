@@ -6,6 +6,9 @@ import (
 	"nextinterfaces_playground/package_a"
 	"nextinterfaces_playground/hello"
 	"nextinterfaces_playground/main/sub_dir"
+	//"gopkg.in/mgo.v2"
+	"gopkg.in/mgo.v2/bson"
+	"github.com/nextinterfaces/golang-helloworld/helloworld"
 )
 
 //func (r rect) area2() float64 {
@@ -14,7 +17,11 @@ import (
 func main() {
 	fmt.Println("Здрасти, Нацко")
 
+	helloworld.SayHello()
+
 	hello.Print()
+
+	fmt.Print(bson.Marshal)
 
 
 	fmt.Println(sub_dir.Public_func_four())
