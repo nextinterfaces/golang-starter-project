@@ -4,7 +4,6 @@ Go-lang starter project
 
 #### Go Commands
 
-
 Assume $GOPATH workspace structure is:
     
     |
@@ -13,19 +12,28 @@ Assume $GOPATH workspace structure is:
     +- pkg
     | 
     +- src
-         |
-         +- go-lang-playground
     
-Create dependencies to `pkg` 
+#### Install ####
 
+    $ go install github.com/nextinterfaces/dummy
+    
+Which is same as:
+
+    $ cd $GOPATH/src/github.com/nextinterfaces/dummy
+    $ go install
+    
+File gets installed at ./bin directory. Let's try it:
+
+    $ $GOPATH/bin/dummy
+    $ dummy
+ 
+ #### Build ####
+ 
     $ cd $GOPATH/src
-    $ go build nextinterfaces_util/string_util
-    $ go install nextinterfaces_util/string_util
+    $ go build nextinterfaces/util/string_util
+    $ go install nextinterfaces/util/string_util
+    
     $ go build nextinterfaces_playground/hello
-    $ go install nextinterfaces_playground/hello
-    
-Create executables to `bin` 
-    
     $ go install nextinterfaces_playground/hello
 
 After the steps above, your workspace should look like this:
@@ -44,18 +52,16 @@ After the steps above, your workspace should look like this:
             stringutil/
                 reverse.go    # package source
 
-Run executables
- 
-    $ hello
+#### Run ####
 
+    $ cd $GOPATH/src
+    $ go run nextinterfaces_playground/web/webserver_content.go
+    
 Alternatively 
 
-    $ go build hello/hello.go
-    $ ./hello
-    $
-    $ go build web/webserver.go
-    $ ./webserver
-    $
-    $ go build web/webserver_content.go
+    $ go build nextinterfaces_playground/web/webserver_content.go
     $ ./webserver_content
+    
+    $ go install nextinterfaces_playground/web/webserver_content
+    $ webserver_content
     
